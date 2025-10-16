@@ -1,5 +1,5 @@
 ---
-title: "Заглавие на документа"
+title: "Main Page"
 description: "Кратко описание"
 date: 2025-10-14
 author: "Вашето име"
