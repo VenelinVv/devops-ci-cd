@@ -10,10 +10,11 @@ on:
     branches: [ "main" ]
 
 jobs:
-  buildversion18:
+  buildVer18:
 
     runs-on: ubuntu-latest
-
+    name: version18
+    
     strategy:
       matrix:
         node-version: [18.x]
@@ -32,6 +33,8 @@ jobs:
     
   jobersion20:
       runs-on: ubuntu-latest
+      name: version20
+      needs: [buildVer18]
 
       strategy:
         matrix:
@@ -51,6 +54,8 @@ jobs:
       
   jobersion22:
       runs-on: ubuntu-latest
+      name: version22
+      needs: [buildVer18]
 
       strategy:
         matrix:
